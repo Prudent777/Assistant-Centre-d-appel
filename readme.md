@@ -62,3 +62,43 @@ Be sure you are using the python environment!
 
 - Whisper:
   https://github.com/openai/whisper
+
+
+  {
+    "name": "Multi Channel Support Desk",
+    "description": "A Flask app that handles inbound calling and SMS. Uses TaskRouter to coordinate handing off calls and messages to support desk agents.",
+    "keywords": [
+        "twilio",
+        "call center",
+        "taskrouter",
+        "flask",
+        "python"
+    ],
+    "website": "https://www.twilio.com",
+    "repository": "https://github.com/makaimc/taskrouter-multi-channel-support-desk",
+    "logo": "https://www.twilio.com/bundles/marketing/img/logos/wordmark-red.svg",
+    "env": {
+        "TWILIO_ACCOUNT_SID": {
+            "description": "Your Twilio account's unique identifier, found here: https://www.twilio.com/user/account",
+            "value": "ACxxxxxxxxxxxxxx"
+        },
+        "TWILIO_AUTH_TOKEN": {
+            "description": "Your Twilio account's secret key, found here: https://www.twilio.com/user/account",
+            "value": "yyyyyyyyyyyyyyyyyy"
+        },
+        "WORKSPACE_SID": {
+            "description": "Twilio Workspace SID for workspace you want to use for this support desk",
+            "value": "WSzzzzzzzzzzzzzzzzzzz"
+        },
+        "WORKFLOW_SID": {
+            "description": "Twilio Workflow SID (different from Workspace) for workspace you want to use for this support desk",
+            "value": "WWaaaaaaaaaaaaaaaaaaa"
+        },
+        "SUPPORT_DESK_NUMBER": {
+            "description": "Twilio phone number used for the support desk",
+            "value": "+12025551234"
+        }
+    },
+    "success_url": "/"
+}
+
